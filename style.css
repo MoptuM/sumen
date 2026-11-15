@@ -342,3 +342,221 @@ a{
 .subscription__plan.active .subscription__plan-button{
     background-color: #9F3919;
 }
+
+/* Базовые исправления для резиновой верстки */
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+[class*="__wrapper"],
+.companies {
+    padding-inline: 16px;
+}
+
+.subscription {
+    padding-bottom: 80px;
+}
+
+/* Планшеты и небольшие ноутбуки (до 992px) */
+@media (max-width: 992px) {
+    .hero__image {
+        position: static;
+        width: 100%;
+        max-width: 450px;
+        margin-top: 20px;
+    }
+
+    .hero__text {
+        padding-top: 20px;
+    }
+
+    .hero__buttons {
+        flex-wrap: wrap;
+        align-items: center;
+    }
+
+    .mini-features__wrapper {
+        gap: 30px;
+    }
+
+    .subscription__palns {
+        grid-template-columns: 1fr;
+        max-width: 450px;
+        margin-inline: auto;
+        width: 100%;
+        gap: 24px;
+    }
+}
+
+/* Планшеты и крупные телефоны (до 768px) */
+@media (max-width: 768px) {
+    html {
+        scroll-padding: 150px;
+    }
+
+    main {
+        margin-top: 130px;
+    }
+
+    .header {
+        padding-block: 15px;
+    }
+
+    .header__nav {
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+
+    .header__button {
+        padding: 12px 24px;
+        font-size: 15px;
+    }
+
+    .header__list {
+        order: 3;
+        width: 100%;
+        justify-content: center;
+        gap: 28px;
+        border-top: 1px solid #F0F0F0;
+        padding-top: 10px;
+    }
+
+    .hero {
+        padding-block: 30px 50px;
+        text-align: center;
+    }
+
+    .hero__title {
+        font-size: 46px;
+        line-height: 50px;
+        letter-spacing: -1.5px;
+        max-width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .hero__desk {
+        font-size: 18px;
+        line-height: 26px;
+        max-width: 100%;
+    }
+
+    .hero__buttons {
+        justify-content: center;
+        margin-top: 30px;
+        gap: 20px;
+    }
+
+    .companies {
+        padding-block: 40px;
+    }
+
+    .companies__list {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 30px 40px;
+    }
+
+    .features {
+        padding-block: 60px;
+    }
+
+    .features__wrapper {
+        gap: 50px;
+    }
+
+    .feature {
+        flex-direction: column;
+        text-align: center;
+        gap: 30px;
+    }
+
+    .feature:nth-child(even) {
+        flex-direction: column-reverse;
+    }
+
+    .features__content {
+        align-items: center;
+        max-width: 100%;
+        gap: 20px;
+    }
+
+    .features__title {
+        font-size: 36px;
+        line-height: 42px;
+    }
+
+    .features__desk {
+        font-size: 18px;
+        line-height: 26px;
+        max-width: 100%;
+    }
+
+    .mini-features__wrapper {
+        grid-template-columns: 1fr;
+        gap: 40px;
+        max-width: 400px;
+    }
+
+    .subscription {
+        padding-top: 70px;
+    }
+
+    .subscription__wrapper {
+        gap: 40px;
+    }
+
+    .subscription__header {
+        flex-direction: column;
+        text-align: center;
+        gap: 25px;
+    }
+
+    .subscription__title {
+        font-size: 38px;
+        line-height: 44px;
+        max-width: 100%;
+    }
+}
+
+/* Смартфоны (до 480px) */
+@media (max-width: 480px) {
+    .header__list {
+        gap: 20px;
+    }
+
+    .hero__title {
+        font-size: 36px;
+        line-height: 40px;
+    }
+
+    .hero__button {
+        padding: 16px 36px;
+        width: 100%;
+        text-align: center;
+    }
+
+    .features__title,
+    .subscription__title {
+        font-size: 30px;
+        line-height: 36px;
+    }
+
+    .subscription__tabs {
+        width: 100%;
+    }
+
+    .subscription__tab {
+        flex: 1;
+        padding: 15px 20px;
+    }
+
+    .subscription__plan-price {
+        font-size: 48px;
+        line-height: 48px;
+    }
+
+    .subscription__plan-price > span {
+        font-size: 22px;
+    }
+}
